@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shared Resonance</title>
+<meta name="description" content="Resonance is a small, private app for couples who live apart. Both clocks, a mood word, a daily photo and a dictionary of your own words.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0F1722;font-family:'DM Sans',system-ui,sans-serif;color:#EEF2F7}
+a{color:#B8C6D8;text-decoration:none}a:hover{color:#F2C14E}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+</style>
+
+</head>
+<body>
+
+
+<div style="background:#0F1722;color:#EEF2F7;font-family:'DM Sans',system-ui,sans-serif;width:100%;overflow-x:hidden">
+
+<!-- NAV -->
+<div style="max-width:1180px;margin:0 auto;padding:28px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<a href="#top" style="display:flex;align-items:center;gap:12px;color:#EEF2F7">
+<svg viewBox="0 0 400 440" width="34" height="37" role="img" aria-label="Resonance logo: Big Ben and the Empire State Building joined along a diagonal">
+<defs>
+<clipPath id="cl"><polygon points="0,0 184,0 212,440 0,440"/></clipPath>
+<clipPath id="cr"><polygon points="188,0 400,0 400,440 216,440"/></clipPath>
+<mask id="mb" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="440"><rect x="0" y="0" width="400" height="440" fill="#fff"/><rect x="94" y="250" width="5" height="34" fill="#000"/><rect x="94" y="300" width="5" height="34" fill="#000"/><rect x="94" y="350" width="5" height="34" fill="#000"/><rect x="111" y="250" width="5" height="34" fill="#000"/><rect x="111" y="300" width="5" height="34" fill="#000"/><rect x="111" y="350" width="5" height="34" fill="#000"/><circle cx="105" cy="189" r="27" fill="#000"/><path d="M88 140V118a5 5 0 0 1 10 0V140Z" fill="#000"/><path d="M112 140V118a5 5 0 0 1 10 0V140Z" fill="#000"/></mask>
+<mask id="me" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="440"><rect x="0" y="0" width="400" height="440" fill="#fff"/><rect x="246" y="350" width="2" height="54" fill="#000"/><rect x="260" y="350" width="2" height="54" fill="#000"/><rect x="274" y="350" width="2" height="54" fill="#000"/><rect x="288" y="350" width="2" height="54" fill="#000"/><rect x="302" y="350" width="2" height="54" fill="#000"/><rect x="316" y="350" width="2" height="54" fill="#000"/><rect x="330" y="350" width="2" height="54" fill="#000"/><rect x="344" y="350" width="2" height="54" fill="#000"/><rect x="260" y="288" width="2" height="48" fill="#000"/><rect x="272" y="288" width="2" height="48" fill="#000"/><rect x="284" y="288" width="2" height="48" fill="#000"/><rect x="296" y="288" width="2" height="48" fill="#000"/><rect x="308" y="288" width="2" height="48" fill="#000"/><rect x="320" y="288" width="2" height="48" fill="#000"/><rect x="330" y="288" width="2" height="48" fill="#000"/><rect x="272" y="208" width="2" height="66" fill="#000"/><rect x="284" y="208" width="2" height="66" fill="#000"/><rect x="296" y="208" width="2" height="66" fill="#000"/><rect x="308" y="208" width="2" height="66" fill="#000"/><rect x="318" y="208" width="2" height="66" fill="#000"/><rect x="282" y="160" width="2" height="38" fill="#000"/><rect x="292" y="160" width="2" height="38" fill="#000"/><rect x="302" y="160" width="2" height="38" fill="#000"/><rect x="310" y="160" width="2" height="38" fill="#000"/><rect x="289" y="130" width="2" height="20" fill="#000"/><rect x="295" y="130" width="2" height="20" fill="#000"/><rect x="301" y="130" width="2" height="20" fill="#000"/></mask>
+</defs>
+<g clip-path="url(#cl)"><g transform="translate(95 0)"><g mask="url(#mb)"><rect x="40" y="410" width="130" height="6" fill="#1F4F8F"/><rect x="72" y="398" width="66" height="12" fill="#2F6FBF"/><rect x="78" y="230" width="54" height="170" fill="#2F6FBF"/><rect x="114" y="230" width="18" height="170" fill="#1F4F8F"/><rect x="68" y="150" width="74" height="80" fill="#2F6FBF"/><rect x="124" y="150" width="18" height="80" fill="#1F4F8F"/><rect x="64" y="142" width="82" height="10" fill="#2F6FBF"/><rect x="64" y="226" width="82" height="8" fill="#2F6FBF"/><rect x="76" y="98" width="58" height="44" fill="#2F6FBF"/><rect x="70" y="90" width="70" height="10" fill="#2F6FBF"/><polygon points="70,90 73,60 76,90" fill="#2F6FBF"/><polygon points="134,90 137,60 140,90" fill="#2F6FBF"/><polygon points="78,90 132,90 105,34" fill="#2F6FBF"/><polygon points="105,34 132,90 105,90" fill="#1F4F8F"/><rect x="104" y="12" width="2" height="24" fill="#2F6FBF"/><circle cx="105" cy="12" r="3" fill="#2F6FBF"/></g><circle cx="105" cy="189" r="22" fill="none" stroke="#2F6FBF" stroke-width="1.5"/><line x1="105" y1="189" x2="105" y2="172" stroke="#2F6FBF" stroke-width="3" stroke-linecap="round"/><line x1="105" y1="189" x2="117" y2="195" stroke="#2F6FBF" stroke-width="3" stroke-linecap="round"/><rect x="104" y="164" width="2" height="4" fill="#2F6FBF"/><rect x="104" y="210" width="2" height="4" fill="#2F6FBF"/><rect x="80" y="188" width="4" height="2" fill="#2F6FBF"/><rect x="126" y="188" width="4" height="2" fill="#2F6FBF"/></g></g>
+<g clip-path="url(#cr)"><g transform="translate(-95 0)"><g mask="url(#me)"><rect x="190" y="410" width="130" height="6" fill="#B07C0C"/><rect x="236" y="340" width="118" height="70" fill="#E0A21B"/><rect x="330" y="340" width="24" height="70" fill="#B07C0C"/><rect x="250" y="280" width="90" height="62" fill="#E0A21B"/><rect x="318" y="280" width="22" height="62" fill="#B07C0C"/><rect x="262" y="200" width="66" height="82" fill="#E0A21B"/><rect x="308" y="200" width="20" height="82" fill="#B07C0C"/><rect x="274" y="152" width="42" height="50" fill="#E0A21B"/><rect x="298" y="152" width="18" height="50" fill="#B07C0C"/><rect x="283" y="124" width="24" height="30" fill="#E0A21B"/><rect x="297" y="124" width="10" height="30" fill="#B07C0C"/><path d="M283 124Q295 104 307 124Z" fill="#E0A21B"/><polygon points="291,110 299,110 297,66 293,66" fill="#E0A21B"/><rect x="294" y="20" width="2" height="48" fill="#E0A21B"/></g></g></g>
+</svg>
+<span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:24px">Resonance</span>
+</a>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-size:15px">
+<a href="#how" style="padding:12px 0">How it works</a>
+<a href="#features" style="padding:12px 0">Features</a>
+<a href="#privacy" style="padding:12px 0">Privacy</a>
+<a href="#faq" style="padding:12px 0">FAQ</a>
+<a href="#join" style="padding:12px 20px;border:1.5px solid #F2C14E;border-radius:999px;color:#F2C14E;font-weight:700">Get early access</a>
+</div>
+</div>
+
+<!-- HERO -->
+<div id="top" style="max-width:1180px;margin:0 auto;padding:56px 24px 96px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;gap:56px">
+<div style="flex:1 1 460px;min-width:0">
+<div style="font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#7FB2F0;margin-bottom:20px">For two people, far apart</div>
+<h1 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:68px;line-height:1.02;letter-spacing:-0.02em">Two cities.<br>One shared day.</h1>
+<p style="margin:28px 0 0;font-size:20px;line-height:1.55;color:#B8C6D8;max-width:520px">Resonance is a small, private app for couples who live apart. Both clocks, a mood word, a daily photo and a dictionary of your own words. Distance stops being the headline.</p>
+<form id="join" style="margin-top:36px;display:flex;flex-wrap:wrap;gap:12px;max-width:540px">
+<label for="email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Email address</label>
+<input id="email" type="email" placeholder="you@email.com" style="flex:1 1 240px;min-width:0;height:56px;box-sizing:border-box;padding:0 20px;border-radius:999px;border:1.5px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.06);color:#EEF2F7;font-family:'DM Sans',sans-serif;font-size:16px">
+<button type="button" style="height:56px;padding:0 28px;border-radius:999px;border:0;background:#F2C14E;color:#0F1722;font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;cursor:pointer">Get early access</button>
+</form>
+<p style="margin:14px 0 0;font-size:14px;color:#B8C6D8">Launching on iPhone first. [LAUNCH DATE]</p>
+</div>
+
+<!-- phone -->
+<div style="flex:1 1 340px;display:flex;justify-content:center">
+<div style="width:310px;height:630px;box-sizing:border-box;border-radius:46px;border:8px solid #243246;background:#0F1722;padding:26px 18px 20px;display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden">
+<div style="position:absolute;inset:0;background:linear-gradient(115deg,#1F4F8F 0%,#2F6FBF 38%,#E0A21B 62%,#B07C0C 100%);opacity:0.55"></div>
+<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,23,34,0.2) 0%,rgba(15,23,34,0.35) 50%,rgba(15,23,34,0.8) 100%)"></div>
+<div style="position:relative;display:flex;align-items:center;gap:8px"><span style="width:8px;height:8px;border-radius:50%;background:#F2C14E"></span><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:17px">Resonance</span></div>
+<div style="position:relative;border-radius:22px;background:rgba(15,23,34,0.55);border:1px solid rgba(255,255,255,0.16);padding:14px 14px 14px;display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;align-items:center;justify-content:space-between">
+<div>
+<div style="font-size:9px;font-weight:700;letter-spacing:0.14em;color:#F2C14E">PARTNER TIME</div>
+<div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:26px;line-height:1.1">4:05 PM</div>
+<div style="font-size:11px;color:#B8C6D8">New York</div>
+</div>
+<div style="width:2px;height:48px;background:rgba(255,255,255,0.3);transform:rotate(20deg)"></div>
+<div style="text-align:right">
+<div style="font-size:9px;font-weight:700;letter-spacing:0.14em;color:#7FB2F0">YOUR TIME</div>
+<div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:26px;line-height:1.1">9:05 PM</div>
+<div style="font-size:11px;color:#B8C6D8">London</div>
+</div>
+</div>
+<div>
+<div style="height:11px;border-radius:6px;background:rgba(255,255,255,0.14);overflow:hidden"><div style="width:72%;height:100%;background:repeating-linear-gradient(135deg,#F2C14E 0 4px,#A8802A 4px 8px)"></div></div>
+<div style="display:flex;justify-content:space-between;margin-top:6px;font-size:10px;color:#B8C6D8"><span>Next trip: India</span><span>early November</span></div>
+</div>
+</div>
+<div style="position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px">
+<div style="height:116px;box-sizing:border-box;border-radius:20px;background:rgba(15,23,34,0.55);border:1px solid rgba(242,193,78,0.5);padding:12px;display:flex;flex-direction:column;justify-content:space-between"><span style="width:30px;height:30px;border-radius:50%;background:rgba(242,193,78,0.2)"></span><div><div style="font-weight:700;font-size:13px">Dictionary</div><div style="font-size:10px;color:#B8C6D8">A word is waiting</div></div></div>
+<div style="height:116px;box-sizing:border-box;border-radius:20px;background:rgba(15,23,34,0.55);border:1px solid rgba(127,178,240,0.5);padding:12px;display:flex;flex-direction:column;justify-content:space-between"><span style="width:30px;height:30px;border-radius:50%;background:rgba(127,178,240,0.2)"></span><div><div style="font-weight:700;font-size:13px">Questions</div><div style="font-size:10px;color:#B8C6D8">Today's is in</div></div></div>
+<div style="height:116px;box-sizing:border-box;border-radius:20px;background:rgba(15,23,34,0.55);border:1px solid rgba(240,114,138,0.5);padding:12px;display:flex;flex-direction:column;justify-content:space-between"><span style="width:30px;height:30px;border-radius:50%;background:rgba(240,114,138,0.2)"></span><div><div style="font-weight:700;font-size:13px">Trips</div><div style="font-size:10px;color:#B8C6D8">India countdown</div></div></div>
+<div style="height:116px;box-sizing:border-box;border-radius:20px;background:rgba(15,23,34,0.55);border:1px solid rgba(95,199,154,0.7);padding:12px;display:flex;flex-direction:column;justify-content:space-between"><span style="width:30px;height:30px;border-radius:50%;background:rgba(95,199,154,0.2)"></span><div><div style="font-weight:700;font-size:13px">Daily photos</div><div style="font-size:10px;color:#B8C6D8">Theme is set</div></div></div>
+</div>
+<div style="position:relative;margin-top:auto;display:flex;align-items:center;justify-content:center;gap:8px;font-size:13px;color:#EEF2F7;padding-bottom:6px">
+<span>Partner is</span><span style="padding:4px 12px;border:1.5px solid #F2C14E;border-radius:999px;color:#F2C14E;font-weight:700">golden</span><span>today</span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div id="how" style="border-top:1px solid rgba(255,255,255,0.1)">
+<div style="max-width:1180px;margin:0 auto;padding:96px 24px;box-sizing:border-box">
+<h2 style="margin:0 0 16px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:44px;line-height:1.1;letter-spacing:-0.01em">Small moments, every day</h2>
+<p style="margin:0 0 56px;font-size:18px;line-height:1.55;color:#B8C6D8;max-width:620px">Not another chat app. A quiet place that is just yours, built around the little things you would share if you lived down the hall.</p>
+<div style="display:flex;flex-wrap:wrap;gap:20px">
+<div style="flex:1 1 300px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:rgba(255,255,255,0.04);padding:32px">
+<div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:48px;color:#F2C14E;line-height:1">1</div>
+<h3 style="margin:18px 0 10px;font-size:22px">Pair up</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">One of you creates the space and shares a short invite code. The other joins. It only ever holds two people.</p>
+</div>
+<div style="flex:1 1 300px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:rgba(255,255,255,0.04);padding:32px">
+<div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:48px;color:#7FB2F0;line-height:1">2</div>
+<h3 style="margin:18px 0 10px;font-size:22px">Share the day</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">Set your mood word, answer the question, take today's photos. Each of you sees the other's world in their own time.</p>
+</div>
+<div style="flex:1 1 300px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:rgba(255,255,255,0.04);padding:32px">
+<div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:48px;color:#F0728A;line-height:1">3</div>
+<h3 style="margin:18px 0 10px;font-size:22px">Build something together</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">Photos become a mosaic. Solved words become your own dictionary. A countdown carries you to the next trip.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- FEATURES -->
+<div id="features" style="background:#131D2B">
+<div style="max-width:1180px;margin:0 auto;padding:96px 24px;box-sizing:border-box">
+<h2 style="margin:0 0 56px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:44px;line-height:1.1;letter-spacing:-0.01em">Everything you share, nothing you don't</h2>
+<div style="display:flex;flex-wrap:wrap;gap:20px">
+
+<div style="flex:1 1 340px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:#0F1722;padding:32px">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#F2C14E" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+<h3 style="margin:18px 0 8px;font-size:22px">Both clocks</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">Their time and yours, side by side, each in its own time zone. You always know if it is a good moment to call.</p>
+</div>
+
+<div style="flex:1 1 340px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:#0F1722;padding:32px">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#7FB2F0" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 12c2-5 6-5 8 0s6 5 8 0"/></svg>
+<h3 style="margin:18px 0 8px;font-size:22px">A mood word</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">One word, once a day. "Partner is golden today." No explaining needed, and no pressure to reply.</p>
+</div>
+
+<div style="flex:1 1 340px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:#0F1722;padding:32px">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#5FC79A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="3"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>
+<h3 style="margin:18px 0 8px;font-size:22px">Daily photos</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">A shared theme and a handful of colours to hunt for. Photos stay hidden until you have both posted.</p>
+</div>
+
+<div style="flex:1 1 340px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:#0F1722;padding:32px">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#F2C14E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h10a4 4 0 0 1 4 4v12H9a4 4 0 0 1-4-4Z"/><path d="M9 9h6M9 13h4"/></svg>
+<h3 style="margin:18px 0 8px;font-size:22px">Your own dictionary</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">Send a word with a photo clue. Your person guesses it in a word game. Every solved word goes in the book.</p>
+</div>
+
+<div style="flex:1 1 340px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:#0F1722;padding:32px">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#F0728A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l7-3 4 3 7-9"/><path d="M15 8h6v6"/></svg>
+<h3 style="margin:18px 0 8px;font-size:22px">Trips and countdown</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">Plan the next visit together, with a progress bar that fills as the day gets closer.</p>
+</div>
+
+<div style="flex:1 1 340px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:#0F1722;padding:32px">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#7FB2F0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h14v10H10l-4 4v-4H5Z"/><path d="M9 9.5c0-1.2 1-2 2.2-2 1.3 0 2.1.8 2.1 1.8 0 1.5-2 1.5-2 3"/></svg>
+<h3 style="margin:18px 0 8px;font-size:22px">One question a day</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">A question for both of you. Answers stay sealed until you have each answered. You learn new things about each other.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- MOSAIC -->
+<div style="max-width:1180px;margin:0 auto;padding:96px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;gap:64px">
+<div style="flex:1 1 440px;min-width:0">
+<div style="font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#5FC79A;margin-bottom:16px">The monthly mosaic</div>
+<h2 style="margin:0 0 20px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:44px;line-height:1.1;letter-spacing:-0.01em">A month of ordinary days, one picture</h2>
+<p style="margin:0 0 20px;font-size:18px;line-height:1.6;color:#B8C6D8">Each day you get a few colours to find in your world: a deep blue, a warm yellow, a pale grey. Take the photo, and it becomes one tile in a mosaic the two of you are building.</p>
+<p style="margin:0 0 28px;font-size:18px;line-height:1.6;color:#B8C6D8">Every photo stays whole. Nothing is cropped, tinted or covered over, so you can look closely at any tile and still see the street it came from.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+<div style="width:56px;height:56px;border-radius:14px;border:2px dashed #7FB2F0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#7FB2F0">Theme</div>
+<div style="width:56px;height:56px;border-radius:14px;background:#234A7A"></div>
+<div style="width:56px;height:56px;border-radius:14px;background:#E3B94B"></div>
+<div style="width:56px;height:56px;border-radius:14px;background:#C9CED6"></div>
+<div style="width:56px;height:56px;border-radius:14px;background:#1F4D3A"></div>
+</div>
+<div style="margin-top:10px;font-size:14px;color:#B8C6D8">A sample day: the theme shot plus four colour prompts.</div>
+</div>
+<div style="flex:1 1 360px;display:flex;justify-content:center">
+<div style="width:100%;max-width:400px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:3px;padding:10px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:#131D2B">
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(212 55% 28%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(223 73% 63%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(213 56% 30%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(219 66% 49%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(216 62% 42%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(217 64% 45%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(220 68% 52%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(214 58% 34%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(45 83% 61%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(43 79% 53%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(38 71% 37%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(40 74% 43%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(214 59% 35%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(215 60% 38%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(217 64% 45%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(219 66% 49%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(221 70% 56%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(214 59% 35%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(215 60% 37%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(218 65% 47%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(43 80% 54%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(43 80% 56%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(38 70% 37%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 82% 59%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(224 74% 65%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(223 74% 63%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(216 62% 42%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(216 62% 41%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(223 74% 64%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(218 66% 48%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(219 66% 50%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 81% 58%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 81% 58%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(42 79% 52%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 82% 60%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(39 72% 39%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(215 60% 38%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(217 63% 44%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(216 61% 39%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(213 57% 32%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(217 63% 43%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(213 57% 32%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(216 61% 40%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(47 88% 69%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(40 73% 42%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(47 89% 72%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(41 76% 47%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(45 85% 64%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(221 71% 58%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(214 58% 35%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(218 64% 46%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(212 56% 29%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(213 57% 32%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(215 60% 38%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(224 74% 65%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(42 79% 52%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(38 70% 36%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(43 80% 55%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 82% 58%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(41 75% 46%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(213 56% 30%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(214 58% 34%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(213 57% 32%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(222 71% 59%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(222 71% 58%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(222 71% 59%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(216 61% 40%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(39 71% 39%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(41 77% 48%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(38 70% 37%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(39 73% 41%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(43 79% 54%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(212 56% 29%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(214 59% 35%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(224 74% 65%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(224 75% 65%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(214 59% 35%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(213 57% 31%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(41 75% 46%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(39 73% 41%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(45 83% 61%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(42 78% 52%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(45 85% 64%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(46 87% 68%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(213 57% 33%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(213 57% 32%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(223 73% 62%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(218 66% 49%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(221 71% 58%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(217 63% 42%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(41 75% 46%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(47 89% 72%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(40 73% 42%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(39 71% 38%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(47 87% 68%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(39 72% 39%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(220 68% 53%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(212 56% 29%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(222 71% 58%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(221 70% 57%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(224 75% 65%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(223 74% 63%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 82% 58%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(47 87% 69%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 81% 57%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(39 72% 39%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 82% 59%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(40 75% 45%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(223 73% 63%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(215 61% 39%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(217 63% 44%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(218 65% 47%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(213 57% 32%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(219 67% 50%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(41 76% 48%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(43 79% 54%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 82% 59%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(45 83% 61%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(40 75% 45%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(45 84% 63%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(215 60% 38%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(215 60% 37%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(212 55% 28%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(214 59% 35%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(221 70% 56%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(45 85% 64%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(40 75% 45%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 81% 57%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(45 84% 63%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(38 71% 37%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(41 77% 49%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(46 87% 68%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(215 59% 36%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(212 55% 28%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(215 59% 36%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(221 70% 56%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(222 72% 60%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(48 90% 74%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(43 81% 56%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 83% 61%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(38 70% 37%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(42 78% 52%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(43 80% 55%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 83% 60%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(218 65% 46%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(215 60% 38%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(218 64% 46%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(212 55% 28%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(221 71% 58%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(45 84% 63%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(45 85% 64%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(48 89% 72%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 82% 59%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(40 74% 43%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(39 73% 41%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(46 86% 66%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(221 69% 55%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(216 62% 41%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(213 56% 30%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(218 65% 47%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(217 63% 43%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(43 79% 54%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(40 75% 45%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(39 72% 40%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(42 79% 53%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(39 72% 40%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(46 87% 68%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(47 89% 72%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(218 65% 47%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(218 65% 47%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(223 73% 62%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(215 60% 38%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(42 78% 51%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(43 80% 56%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(42 79% 53%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(46 87% 68%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 82% 58%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(45 85% 64%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(43 80% 55%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(47 89% 72%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(217 63% 42%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(223 73% 62%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(221 70% 56%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(222 72% 60%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(43 80% 55%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(46 85% 65%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(44 82% 60%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(39 71% 38%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(38 70% 37%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(43 80% 56%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(39 73% 42%)"></div>
+<div style="aspect-ratio:3/4;border-radius:3px;background:hsl(42 78% 51%)"></div>
+</div>
+</div>
+</div>
+
+<!-- PRIVACY -->
+<div id="privacy" style="background:#131D2B">
+<div style="max-width:1180px;margin:0 auto;padding:96px 24px;box-sizing:border-box">
+<h2 style="margin:0 0 16px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:44px;line-height:1.1;letter-spacing:-0.01em">Private by design</h2>
+<p style="margin:0 0 48px;font-size:18px;line-height:1.55;color:#B8C6D8;max-width:620px">It is a space for two people. We kept it that way on purpose.</p>
+<div style="display:flex;flex-wrap:wrap;gap:20px">
+<div style="flex:1 1 300px;box-sizing:border-box;padding:0 8px 0 24px;border-left:3px solid #F2C14E">
+<h3 style="margin:0 0 8px;font-size:20px">No location tracking</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">Resonance never asks where you are. It only knows your time zone, so the clock is right.</p>
+</div>
+<div style="flex:1 1 300px;box-sizing:border-box;padding:0 8px 0 24px;border-left:3px solid #7FB2F0">
+<h3 style="margin:0 0 8px;font-size:20px">Revealed together</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">Photos and answers stay hidden until you have both posted, so neither of you is reacting to the other.</p>
+</div>
+<div style="flex:1 1 300px;box-sizing:border-box;padding:0 8px 0 24px;border-left:3px solid #5FC79A">
+<h3 style="margin:0 0 8px;font-size:20px">Just the two of you</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">No feed, no followers, no public profile. Everything lives inside your pair.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- FAQ -->
+<div id="faq" style="max-width:820px;margin:0 auto;padding:96px 24px;box-sizing:border-box">
+<h2 style="margin:0 0 40px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:44px;line-height:1.1;letter-spacing:-0.01em">Questions</h2>
+<details style="border-top:1px solid rgba(255,255,255,0.14);padding:22px 0">
+<summary style="font-size:19px;font-weight:700;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px">Is Resonance only for couples?<span style="color:#F2C14E;font-size:24px" aria-hidden="true">+</span></summary>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">It is built for two people who are apart and want a shared daily space. [CONFIRM: couples only, or any pair?]</p>
+</details>
+<details style="border-top:1px solid rgba(255,255,255,0.14);padding:22px 0">
+<summary style="font-size:19px;font-weight:700;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px">Does it track my location?<span style="color:#F2C14E;font-size:24px" aria-hidden="true">+</span></summary>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">No. It uses your time zone to show the right time, and nothing more about where you are.</p>
+</details>
+<details style="border-top:1px solid rgba(255,255,255,0.14);padding:22px 0">
+<summary style="font-size:19px;font-weight:700;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px">When can I get it?<span style="color:#F2C14E;font-size:24px" aria-hidden="true">+</span></summary>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">iPhone first, then Android. Join the early access list and we will email you at launch. [LAUNCH DATE]</p>
+</details>
+<details style="border-top:1px solid rgba(255,255,255,0.14);border-bottom:1px solid rgba(255,255,255,0.14);padding:22px 0">
+<summary style="font-size:19px;font-weight:700;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px">What will it cost?<span style="color:#F2C14E;font-size:24px" aria-hidden="true">+</span></summary>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">[YOUR PRICE]</p>
+</details>
+</div>
+
+<!-- CTA -->
+<div style="background:#F2C14E;color:#0F1722">
+<div style="max-width:1180px;margin:0 auto;padding:88px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:32px">
+<div style="flex:1 1 420px">
+<h2 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:48px;line-height:1.05;letter-spacing:-0.01em">Make the distance feel small.</h2>
+<p style="margin:16px 0 0;font-size:18px;line-height:1.5;max-width:520px">Join the early access list and be one of the first pairs in.</p>
+</div>
+<form style="flex:1 1 380px;display:flex;flex-wrap:wrap;gap:12px;max-width:520px">
+<label for="email2" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Email address</label>
+<input id="email2" type="email" placeholder="you@email.com" style="flex:1 1 220px;min-width:0;height:56px;box-sizing:border-box;padding:0 20px;border-radius:999px;border:2px solid #0F1722;background:#FFF8E6;color:#0F1722;font-family:'DM Sans',sans-serif;font-size:16px">
+<button type="button" style="height:56px;padding:0 28px;border-radius:999px;border:0;background:#0F1722;color:#F2C14E;font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;cursor:pointer">Get early access</button>
+</form>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div style="max-width:1180px;margin:0 auto;padding:40px 24px 56px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;font-size:14px;color:#B8C6D8">
+<div><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;color:#EEF2F7">Shared Resonance</span> &nbsp;·&nbsp; sharedresonance.app</div>
+<div style="display:flex;gap:24px"><a href="#privacy" style="padding:12px 0">Privacy</a><a href="#faq" style="padding:12px 0">FAQ</a><a href="#join" style="padding:12px 0">Contact</a></div>
+</div>
+
+</div>
+
+</body>
+</html>
