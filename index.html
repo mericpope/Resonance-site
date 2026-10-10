@@ -51,12 +51,13 @@ details summary::-webkit-details-marker{display:none}
 <div style="font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#7FB2F0;margin-bottom:20px">For two people, far apart</div>
 <h1 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:68px;line-height:1.02;letter-spacing:-0.02em">Two cities.<br>One shared day.</h1>
 <p style="margin:28px 0 0;font-size:20px;line-height:1.55;color:#B8C6D8;max-width:520px">Resonance is a small, private app for couples who live apart. Both clocks, a mood word, a daily photo and a dictionary of your own words. Distance stops being the headline.</p>
-<form id="join" style="margin-top:36px;display:flex;flex-wrap:wrap;gap:12px;max-width:540px">
+<form id="join" class="waitlist" style="margin-top:36px;display:flex;flex-wrap:wrap;gap:12px;max-width:540px">
 <label for="email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Email address</label>
-<input id="email" type="email" placeholder="you@email.com" style="flex:1 1 240px;min-width:0;height:56px;box-sizing:border-box;padding:0 20px;border-radius:999px;border:1.5px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.06);color:#EEF2F7;font-family:'DM Sans',sans-serif;font-size:16px">
-<button type="button" style="height:56px;padding:0 28px;border-radius:999px;border:0;background:#F2C14E;color:#0F1722;font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;cursor:pointer">Get early access</button>
+<input id="email" name="email" type="email" required autocomplete="email" placeholder="you@email.com" style="flex:1 1 240px;min-width:0;height:56px;box-sizing:border-box;padding:0 20px;border-radius:999px;border:1.5px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.06);color:#EEF2F7;font-family:'DM Sans',sans-serif;font-size:16px">
+<button type="submit" style="height:56px;padding:0 28px;border-radius:999px;border:0;background:#F2C14E;color:#0F1722;font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;cursor:pointer">Get early access</button>
+<p class="waitlist-status" role="status" aria-live="polite" style="flex-basis:100%;margin:0;font-size:15px;color:#F2C14E"></p>
 </form>
-<p style="margin:14px 0 0;font-size:14px;color:#B8C6D8">Launching on iPhone first. [LAUNCH DATE]</p>
+<p style="margin:14px 0 0;font-size:14px;color:#B8C6D8">Coming soon to iPhone and Android.</p>
 </div>
 
 <!-- phone -->
@@ -149,7 +150,7 @@ details summary::-webkit-details-marker{display:none}
 <div style="flex:1 1 340px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:#0F1722;padding:32px">
 <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#F2C14E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h10a4 4 0 0 1 4 4v12H9a4 4 0 0 1-4-4Z"/><path d="M9 9h6M9 13h4"/></svg>
 <h3 style="margin:18px 0 8px;font-size:22px">Your own dictionary</h3>
-<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">Send a word with a photo clue. Your person guesses it in a word game. Every solved word goes in the book.</p>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">Send a word with a blurred photo clue. Your person guesses it letter by letter while the photo sharpens. Every solved word goes in the book.</p>
 </div>
 
 <div style="flex:1 1 340px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:#0F1722;padding:32px">
@@ -162,6 +163,24 @@ details summary::-webkit-details-marker{display:none}
 <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#7FB2F0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h14v10H10l-4 4v-4H5Z"/><path d="M9 9.5c0-1.2 1-2 2.2-2 1.3 0 2.1.8 2.1 1.8 0 1.5-2 1.5-2 3"/></svg>
 <h3 style="margin:18px 0 8px;font-size:22px">One question a day</h3>
 <p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">A question for both of you. Answers stay sealed until you have each answered. You learn new things about each other.</p>
+</div>
+
+<div style="flex:1 1 340px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:#0F1722;padding:32px">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#F0728A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>
+<h3 style="margin:18px 0 8px;font-size:22px">Thinking of you</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">One tap sends a heart. It lands on their phone, and a heart blooms on their home screen when they open the app.</p>
+</div>
+
+<div style="flex:1 1 340px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:#0F1722;padding:32px">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#F2C14E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>
+<h3 style="margin:18px 0 8px;font-size:22px">Dates that matter</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">Anniversaries, birthdays, the day you met. They show up on your home screen the week before, with a nudge on the day.</p>
+</div>
+
+<div style="flex:1 1 340px;box-sizing:border-box;border-radius:22px;border:1px solid rgba(255,255,255,0.14);background:#0F1722;padding:32px">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#5FC79A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg>
+<h3 style="margin:18px 0 8px;font-size:22px">The month-end reveal</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">On the first of the month, your photos fill the canvas one by one, and the picture they were secretly building fades in.</p>
 </div>
 
 </div>
@@ -400,7 +419,12 @@ details summary::-webkit-details-marker{display:none}
 <h3 style="margin:0 0 8px;font-size:20px">Just the two of you</h3>
 <p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">No feed, no followers, no public profile. Everything lives inside your pair.</p>
 </div>
+<div style="flex:1 1 300px;box-sizing:border-box;padding:0 8px 0 24px;border-left:3px solid #F0728A">
+<h3 style="margin:0 0 8px;font-size:20px">No ads, ever</h3>
+<p style="margin:0;font-size:16px;line-height:1.55;color:#B8C6D8">We don't sell your data or track you across other apps. Delete your account from inside the app at any time.</p>
 </div>
+</div>
+<p style="margin:40px 0 0;font-size:16px"><a href="https://sharedresonance.app/privacy/" style="color:#F2C14E;text-decoration:underline">Read the full privacy policy</a></p>
 </div>
 </div>
 
@@ -409,7 +433,7 @@ details summary::-webkit-details-marker{display:none}
 <h2 style="margin:0 0 40px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:44px;line-height:1.1;letter-spacing:-0.01em">Questions</h2>
 <details style="border-top:1px solid rgba(255,255,255,0.14);padding:22px 0">
 <summary style="font-size:19px;font-weight:700;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px">Is Resonance only for couples?<span style="color:#F2C14E;font-size:24px" aria-hidden="true">+</span></summary>
-<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">It is built for two people who are apart and want a shared daily space. [CONFIRM: couples only, or any pair?]</p>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">Yes. Resonance is built for couples who live apart. Each space holds exactly two people: you and your partner.</p>
 </details>
 <details style="border-top:1px solid rgba(255,255,255,0.14);padding:22px 0">
 <summary style="font-size:19px;font-weight:700;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px">Does it track my location?<span style="color:#F2C14E;font-size:24px" aria-hidden="true">+</span></summary>
@@ -417,11 +441,19 @@ details summary::-webkit-details-marker{display:none}
 </details>
 <details style="border-top:1px solid rgba(255,255,255,0.14);padding:22px 0">
 <summary style="font-size:19px;font-weight:700;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px">When can I get it?<span style="color:#F2C14E;font-size:24px" aria-hidden="true">+</span></summary>
-<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">iPhone first, then Android. Join the early access list and we will email you at launch. [LAUNCH DATE]</p>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">Soon, on iPhone and Android. Join the early access list and we will email you as soon as it's ready.</p>
 </details>
-<details style="border-top:1px solid rgba(255,255,255,0.14);border-bottom:1px solid rgba(255,255,255,0.14);padding:22px 0">
-<summary style="font-size:19px;font-weight:700;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px">What will it cost?<span style="color:#F2C14E;font-size:24px" aria-hidden="true">+</span></summary>
-<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">[YOUR PRICE]</p>
+<details style="border-top:1px solid rgba(255,255,255,0.14);padding:22px 0">
+<summary style="font-size:19px;font-weight:700;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px">Do we both need iPhones?<span style="color:#F2C14E;font-size:24px" aria-hidden="true">+</span></summary>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">No. One of you can be on iPhone and the other on Android. Everything syncs between you.</p>
+</details>
+<details style="border-top:1px solid rgba(255,255,255,0.14);padding:22px 0">
+<summary style="font-size:19px;font-weight:700;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px">Can I delete my account?<span style="color:#F2C14E;font-size:24px" aria-hidden="true">+</span></summary>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">Yes, at any time. Open the menu in the app and choose Delete my account. Your account, photos and answers are removed straight away.</p>
+</details>
+<details id="contact" style="border-top:1px solid rgba(255,255,255,0.14);border-bottom:1px solid rgba(255,255,255,0.14);padding:22px 0">
+<summary style="font-size:19px;font-weight:700;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px">How do I get help?<span style="color:#F2C14E;font-size:24px" aria-hidden="true">+</span></summary>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">Email <a href="mailto:contact@sharedresonance.uk" style="color:#F2C14E">contact@sharedresonance.uk</a> and we'll get back to you. There's more on the <a href="/support/" style="color:#F2C14E">support page</a>.</p>
 </details>
 </div>
 
@@ -432,21 +464,55 @@ details summary::-webkit-details-marker{display:none}
 <h2 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:48px;line-height:1.05;letter-spacing:-0.01em">Make the distance feel small.</h2>
 <p style="margin:16px 0 0;font-size:18px;line-height:1.5;max-width:520px">Join the early access list and be one of the first pairs in.</p>
 </div>
-<form style="flex:1 1 380px;display:flex;flex-wrap:wrap;gap:12px;max-width:520px">
+<form class="waitlist" style="flex:1 1 380px;display:flex;flex-wrap:wrap;gap:12px;max-width:520px">
 <label for="email2" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Email address</label>
-<input id="email2" type="email" placeholder="you@email.com" style="flex:1 1 220px;min-width:0;height:56px;box-sizing:border-box;padding:0 20px;border-radius:999px;border:2px solid #0F1722;background:#FFF8E6;color:#0F1722;font-family:'DM Sans',sans-serif;font-size:16px">
-<button type="button" style="height:56px;padding:0 28px;border-radius:999px;border:0;background:#0F1722;color:#F2C14E;font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;cursor:pointer">Get early access</button>
+<input id="email2" name="email" type="email" required autocomplete="email" placeholder="you@email.com" style="flex:1 1 220px;min-width:0;height:56px;box-sizing:border-box;padding:0 20px;border-radius:999px;border:2px solid #0F1722;background:#FFF8E6;color:#0F1722;font-family:'DM Sans',sans-serif;font-size:16px">
+<button type="submit" style="height:56px;padding:0 28px;border-radius:999px;border:0;background:#0F1722;color:#F2C14E;font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;cursor:pointer">Get early access</button>
+<p class="waitlist-status" role="status" aria-live="polite" style="flex-basis:100%;margin:0;font-size:15px;font-weight:700;color:#0F1722"></p>
 </form>
 </div>
 </div>
 
 <!-- FOOTER -->
 <div style="max-width:1180px;margin:0 auto;padding:40px 24px 56px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;font-size:14px;color:#B8C6D8">
-<div><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;color:#EEF2F7">Shared Resonance</span> &nbsp;·&nbsp; sharedresonance.app</div>
-<div style="display:flex;gap:24px"><a href="#privacy" style="padding:12px 0">Privacy</a><a href="#faq" style="padding:12px 0">FAQ</a><a href="#join" style="padding:12px 0">Contact</a></div>
+<div><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;color:#EEF2F7">Shared Resonance</span> &nbsp;·&nbsp; © 2026</div>
+<div style="display:flex;flex-wrap:wrap;gap:0 24px"><a href="https://sharedresonance.app/privacy/" style="padding:12px 0">Privacy policy</a><a href="/support/" style="padding:12px 0">Support</a><a href="#faq" style="padding:12px 0">FAQ</a><a href="mailto:contact@sharedresonance.uk" style="padding:12px 0">contact@sharedresonance.uk</a></div>
 </div>
 
 </div>
+
+<script>
+// Early-access sign-ups go to the Resonance database (SQL 0012: join_waitlist). The key below is
+// Supabase's public "anon" key: it can only call what the database explicitly allows.
+(function () {
+  var URL = 'https://rcvrrgnmpxwwqqiuzdxd.supabase.co';
+  var KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJjdnJyZ25tcHh3d3FxaXV6ZHhkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE1ODIwNTgsImV4cCI6MjEwNzE1ODA1OH0.74lQlZ-lOhcX-yD_u5OGnSNEoqHQhKU0V39tyFLWdCc';
+  document.querySelectorAll('form.waitlist').forEach(function (form) {
+    var input = form.querySelector('input[type=email]');
+    var button = form.querySelector('button');
+    var status = form.querySelector('.waitlist-status');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!input.checkValidity()) { status.textContent = 'Please enter a valid email address.'; return; }
+      button.disabled = true;
+      status.textContent = 'Adding you…';
+      fetch(URL + '/rest/v1/rpc/join_waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', apikey: KEY, Authorization: 'Bearer ' + KEY },
+        body: JSON.stringify({ email: input.value })
+      }).then(function (res) {
+        if (!res.ok) throw new Error(String(res.status));
+        status.textContent = "You're on the list. We'll email you when Resonance is ready.";
+        input.value = '';
+      }).catch(function () {
+        status.textContent = "That didn't go through. Please try again, or email contact@sharedresonance.uk.";
+      }).finally(function () {
+        button.disabled = false;
+      });
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
