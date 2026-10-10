@@ -31,6 +31,7 @@ body{margin:0;background:#0F1722;font-family:'DM Sans',system-ui,sans-serif;colo
 a{color:#B8C6D8;text-decoration:none}a:hover{color:#F2C14E}
 details summary{cursor:pointer;list-style:none}
 details summary::-webkit-details-marker{display:none}
+@media (max-width:720px){.site-nav{flex-wrap:nowrap!important;padding:20px 16px!important}.nav-link{display:none}.nav-cta{white-space:nowrap}}
 </style>
 
 </head>
@@ -40,7 +41,7 @@ details summary::-webkit-details-marker{display:none}
 <div style="background:#0F1722;color:#EEF2F7;font-family:'DM Sans',system-ui,sans-serif;width:100%;overflow-x:hidden">
 
 <!-- NAV -->
-<div style="max-width:1180px;margin:0 auto;padding:28px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<div class="site-nav" style="max-width:1180px;margin:0 auto;padding:28px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
 <a href="#top" style="display:flex;align-items:center;gap:12px;color:#EEF2F7">
 <svg viewBox="0 0 400 440" width="34" height="37" role="img" aria-label="Resonance logo: Big Ben and the Empire State Building joined along a diagonal">
 <defs>
@@ -54,13 +55,13 @@ details summary::-webkit-details-marker{display:none}
 </svg>
 <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:24px">Resonance</span>
 </a>
-<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-size:15px">
-<a href="#how" style="padding:12px 0">How it works</a>
-<a href="#features" style="padding:12px 0">Features</a>
-<a href="#privacy" style="padding:12px 0">Privacy</a>
-<a href="#faq" style="padding:12px 0">FAQ</a>
-<a href="https://sharedresonance.app" style="padding:12px 0">Open the app</a>
-<a href="#join" style="padding:12px 20px;border:1.5px solid #F2C14E;border-radius:999px;color:#F2C14E;font-weight:700">Get early access</a>
+<div class="nav-links" style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-size:15px">
+<a class="nav-link" href="#how" style="padding:12px 0">How it works</a>
+<a class="nav-link" href="#features" style="padding:12px 0">Features</a>
+<a class="nav-link" href="#privacy" style="padding:12px 0">Privacy</a>
+<a class="nav-link" href="#faq" style="padding:12px 0">FAQ</a>
+<a class="nav-link" href="https://sharedresonance.app" style="padding:12px 0">Open the app</a>
+<a class="nav-cta" href="#join" style="padding:12px 20px;border:1.5px solid #F2C14E;border-radius:999px;color:#F2C14E;font-weight:700">Get early access</a>
 </div>
 </div>
 
