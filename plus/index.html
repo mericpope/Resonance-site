@@ -239,17 +239,17 @@ footer a{color:#B8C6D8}
 <div class="price best">
 <span class="tag">2 MONTHS FREE</span>
 <div class="name">Yearly</div>
-<div class="amount">£79.90 <small>a year</small></div>
-<p class="sub">About £6.66 a month.</p>
+<div class="amount"><span class="money" data-usd="$99.90">£79.90</span> <small>a year</small></div>
+<p class="sub">About <span class="money" data-usd="$8.33">£6.66</span> a month.</p>
 </div>
 <div class="price">
 <div class="name">Monthly</div>
-<div class="amount">£7.99 <small>a month</small></div>
+<div class="amount"><span class="money" data-usd="$9.99">£7.99</span> <small>a month</small></div>
 <p class="sub">Cancel any time.</p>
 </div>
 <div class="price">
 <div class="name">Lifetime</div>
-<div class="amount">£179.99 <small>once</small></div>
+<div class="amount"><span class="money" data-usd="$224.99">£179.99</span> <small>once</small></div>
 <p class="sub">Yours for good, with 12 printed postcards that never expire.</p>
 </div>
 </div>
@@ -292,7 +292,7 @@ footer a{color:#B8C6D8}
 </details>
 <details>
 <summary>How much does it cost?<span aria-hidden="true">+</span></summary>
-<p>£7.99 a month, £79.90 a year, or £179.99 once for lifetime. Whichever you choose, it covers both of you.</p>
+<p><span class="money" data-usd="$9.99">£7.99</span> a month, <span class="money" data-usd="$99.90">£79.90</span> a year, or <span class="money" data-usd="$224.99">£179.99</span> once for lifetime. Whichever you choose, it covers both of you.</p>
 </details>
 <details>
 <summary>How do I cancel?<span aria-hidden="true">+</span></summary>
@@ -311,5 +311,15 @@ footer a{color:#B8C6D8}
 </footer>
 
 </div>
+<script>
+// Dollars for visitors in the US, matching what checkout charges (the app decides the same way).
+(function () {
+  var tz = '';
+  try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+  var us = /^(America/(New_York|Chicago|Denver|Los_Angeles|Phoenix|Anchorage|Detroit|Boise|Juneau|Sitka|Nome|Yakutat|Adak|Metlakatla|Menominee|Puerto_Rico|Indiana/.+|Kentucky/.+|North_Dakota/.+)|Pacific/Honolulu|US/.+)$/.test(tz);
+  if (!us) return;
+  document.querySelectorAll('.money[data-usd]').forEach(function (el) { el.textContent = el.getAttribute('data-usd'); });
+})();
+</script>
 </body>
 </html>

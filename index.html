@@ -278,7 +278,7 @@ details summary::-webkit-details-marker{display:none}
 </div>
 <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px">
 <a href="/plus/" style="display:inline-block;padding:16px 28px;border-radius:999px;background:#F2C14E;color:#0F1722;font-weight:700;text-decoration:none;font-size:16px">See Resonance+</a>
-<span style="font-size:15px;color:#B8C6D8">One subscription covers you both · from £7.99 a month, or 2 months free yearly</span>
+<span style="font-size:15px;color:#B8C6D8">One subscription covers you both · from <span class="money" data-usd="$9.99">£7.99</span> a month, or 2 months free yearly</span>
 </div>
 </div>
 </div>
@@ -292,7 +292,7 @@ details summary::-webkit-details-marker{display:none}
 </details>
 <details style="border-top:1px solid rgba(255,255,255,0.14);padding:22px 0">
 <summary style="font-size:19px;font-weight:700;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px">Is Resonance free?<span style="color:#F2C14E;font-size:24px" aria-hidden="true">+</span></summary>
-<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">Yes. Everything on this page is free. <a href="/plus/" style="color:#F2C14E">Resonance+</a> adds extras for £7.99 a month, £79.90 a year or £179.99 once, and one subscription covers you both.</p>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.6;color:#B8C6D8">Yes. Everything on this page is free. <a href="/plus/" style="color:#F2C14E">Resonance+</a> adds extras for <span class="money" data-usd="$9.99">£7.99</span> a month, <span class="money" data-usd="$99.90">£79.90</span> a year or <span class="money" data-usd="$224.99">£179.99</span> once, and one subscription covers you both.</p>
 </details>
 <details style="border-top:1px solid rgba(255,255,255,0.14);padding:22px 0">
 <summary style="font-size:19px;font-weight:700;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px">Does it track my location?<span style="color:#F2C14E;font-size:24px" aria-hidden="true">+</span></summary>
@@ -377,5 +377,15 @@ details summary::-webkit-details-marker{display:none}
 })();
 </script>
 
+<script>
+// Dollars for visitors in the US, matching what checkout charges (the app decides the same way).
+(function () {
+  var tz = '';
+  try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+  var us = /^(America/(New_York|Chicago|Denver|Los_Angeles|Phoenix|Anchorage|Detroit|Boise|Juneau|Sitka|Nome|Yakutat|Adak|Metlakatla|Menominee|Puerto_Rico|Indiana/.+|Kentucky/.+|North_Dakota/.+)|Pacific/Honolulu|US/.+)$/.test(tz);
+  if (!us) return;
+  document.querySelectorAll('.money[data-usd]').forEach(function (el) { el.textContent = el.getAttribute('data-usd'); });
+})();
+</script>
 </body>
 </html>
