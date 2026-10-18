@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>December together · Resonance</title>
+<meta name="description" content="An advent calendar for couples who live apart: 25 little doors, two halves each, and a card on Christmas Day.">
+<meta name="theme-color" content="#0F1722">
+<link rel="canonical" href="https://sharedresonance.uk/founders/">
+<link rel="icon" href="/favicon.png" sizes="64x64" type="image/png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0F1722;font-family:'DM Sans',system-ui,sans-serif;color:#EEF2F7}
+a{color:#F2C14E}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px;box-sizing:border-box}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:28px 0}
+.brand{color:#EEF2F7;text-decoration:none;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:22px}
+.nav a.back{color:#B8C6D8;text-decoration:none;font-size:15px}
+h1{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:48px;line-height:1.05;letter-spacing:-.02em;margin:40px 0 12px}
+h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:24px;margin:44px 0 8px}
+p,li{font-size:16px;line-height:1.65;color:#B8C6D8}
+.updated{font-size:14px;margin:0 0 8px}
+.lede{font-size:18px}
+.wrap>p,.wrap>ul,.wrap>details,.wrap>h2,.also{max-width:700px}
+.offer{max-width:760px}
+.hero{max-width:1000px;margin:0 auto;padding:8px 24px 40px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;gap:48px}
+.hero-text{flex:1 1 460px;min-width:0}
+.hero h1{font-size:56px}
+body.xmas{background:radial-gradient(900px 520px at 78% 18%,rgba(242,193,78,.13),transparent 70%),radial-gradient(1000px 700px at 10% 100%,rgba(47,122,92,.22),transparent 70%),linear-gradient(180deg,#0E1622 0%,#0F1B22 55%,#10201D 100%);background-attachment:fixed}
+.snow{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.55;background-image:radial-gradient(2px 2px at 20px 30px,#fff,transparent),radial-gradient(1.5px 1.5px at 120px 80px,#fff,transparent),radial-gradient(2.5px 2.5px at 200px 160px,rgba(255,255,255,.9),transparent),radial-gradient(1.5px 1.5px at 60px 210px,#fff,transparent),radial-gradient(2px 2px at 260px 40px,rgba(255,255,255,.8),transparent);background-size:300px 260px;animation:snow 22s linear infinite}
+.snow.far{opacity:.3;background-size:180px 170px;animation-duration:34s}
+@keyframes snow{from{background-position:0 0}to{background-position:60px 260px}}
+@media (prefers-reduced-motion:reduce){.snow{animation:none}.lights i{animation:none!important}}
+body.xmas>*:not(.snow){position:relative;z-index:1}
+.xmas .eyebrow{color:#E86A7F}
+.xmas .hero-note{color:#F2C14E}
+.hero-plus{margin:8px 0 0;font-size:14px;color:#B8C6D8;max-width:520px}
+.hero-plus a{color:#F2C14E}
+.cal{background:linear-gradient(180deg,rgba(24,44,38,.85),rgba(15,23,34,.85));border:1px solid rgba(242,193,78,.28);position:relative;padding-top:28px}
+.lights{position:absolute;left:18px;right:18px;top:-7px;height:18px;display:flex;justify-content:space-between;align-items:flex-start;border-top:1.5px solid rgba(220,232,242,.25);border-radius:50% 50% 0 0/14px 14px 0 0}
+.lights i{width:9px;height:12px;border-radius:50% 50% 45% 45%;background:var(--l);margin-top:3px;box-shadow:0 0 10px 2px var(--l);animation:twinkle 3s ease-in-out infinite;animation-delay:var(--d)}
+@keyframes twinkle{0%,100%{opacity:1}50%{opacity:.55}}
+.cal-head span:first-child{color:#F2C14E}
+.door.shut{background:linear-gradient(160deg,rgba(220,232,242,.10),rgba(220,232,242,.03));border:1px solid rgba(220,232,242,.16)}
+.door.shut::after{content:"";position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:rgba(242,193,78,.55)}
+.door.last{border-color:rgba(242,193,78,.75);background:linear-gradient(160deg,rgba(242,193,78,.18),rgba(242,193,78,.05))}
+.door.last::after{display:none}
+.door.last svg{right:50%;bottom:50%;transform:translate(50%,50%)}
+.k-both{background:linear-gradient(90deg,#C2364F 50%,#2F7A5C 50%)}
+.door.letters{border-color:rgba(242,193,78,.45)}
+.door.letters::after{display:none}
+.door.letters svg{position:absolute;right:50%;bottom:50%;transform:translate(50%,50%)}
+.envelope{width:230px;height:156px;flex:none;border-radius:6px;background:#F6F1E7;box-shadow:0 20px 44px rgba(0,0,0,.4);position:relative;padding:18px 20px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;transform:rotate(-3deg)}
+.envelope b{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:25px;line-height:1;color:#C2364F}
+.envelope span{font-size:11px;color:#5B6878;margin-top:5px}
+.env-stamp{position:absolute;right:12px;top:12px;width:36px;height:44px;border:2px dashed rgba(194,54,79,.55);border-radius:3px;display:flex;align-items:center;justify-content:center}
+.env-stamp svg path{fill:#C2364F}
+.env-post{position:absolute;right:42px;top:18px;width:42px;height:42px;border-radius:50%;border:1.5px solid rgba(27,36,48,.25);display:flex;align-items:center;justify-content:center;text-align:center;font-size:6px;line-height:1.2;color:rgba(27,36,48,.5);transform:rotate(-12deg)}
+.door.last svg,.door.letters svg{position:absolute;left:50%;top:55%;right:auto;bottom:auto;transform:translate(-50%,-50%)}
+.xmas .offer{border-color:rgba(194,54,79,.5);background:rgba(194,54,79,.08)}
+.hero-note{margin:18px 0 0;font-size:15px;color:#F2C14E}
+.cal-wrap{flex:1 1 360px;display:flex;justify-content:center;min-width:0}
+.cal{width:100%;max-width:420px;border-radius:28px;background:rgba(15,23,34,.6);border:1px solid rgba(255,255,255,.14);padding:20px;box-sizing:border-box;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.cal-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;font-size:12px;color:#B8C6D8}
+.cal-head span:first-child{font-weight:700;letter-spacing:.16em;color:#F2C14E}
+.doors{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}
+.door{position:relative;aspect-ratio:1;border-radius:10px;overflow:hidden;display:flex}
+.door em{position:absolute;left:6px;top:4px;font-style:normal;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:13px;color:#EEF2F7;text-shadow:0 1px 3px rgba(0,0,0,.5)}
+.door .half{flex:1}
+.door.open .half+.half{border-left:1px solid rgba(15,23,34,.5)}
+.door.today{outline:2px solid #F2C14E;outline-offset:1px}
+.door.today .wait{background:repeating-linear-gradient(135deg,rgba(255,255,255,.08) 0 5px,rgba(255,255,255,.02) 5px 10px)}
+.door.shut{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);box-sizing:border-box}
+.door.open em,.door.today em{background:rgba(15,23,34,.6);border-radius:6px;padding:0 4px;text-shadow:none}
+.door.shut em{color:#B8C6D8;text-shadow:none}
+.door.last{border-color:rgba(242,193,78,.6)}
+.door.last svg{position:absolute;right:6px;bottom:6px}
+.cal-key{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:14px;font-size:11.5px;color:#B8C6D8}
+.cal-key i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.k-both{background:linear-gradient(90deg,#C8553D 50%,#7FB2F0 50%)}
+.k-you{background:linear-gradient(90deg,#F2C14E 50%,rgba(255,255,255,.12) 50%)}
+.k-shut{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);box-sizing:border-box}
+.steps{display:grid;gap:12px;padding-left:22px;max-width:700px}
+.steps li{padding-left:4px}
+.feature{display:flex;flex-wrap:wrap;gap:28px;align-items:center;margin-top:40px}
+.feature-text{flex:1 1 320px;min-width:0;max-width:600px}
+.feature-text h2{margin-top:0}
+.offer-line{margin:0;max-width:560px}
+@media (max-width:600px){.doors{gap:5px}.door em{font-size:11px;left:4px;top:2px}.cal{padding:14px}}
+.ph-wrap{flex:1 1 320px;display:flex;justify-content:center}
+.ph{width:320px;height:650px;box-sizing:border-box;border-radius:46px;border:8px solid #243246;background:#0F1722;padding:22px 12px 16px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden}
+.ph>*{position:relative}
+.ph .ph-photo{position:absolute;inset:0;background:radial-gradient(120% 70% at 70% 30%,rgba(242,193,78,.42),transparent 60%),linear-gradient(170deg,#1D3F6E 0%,#2E5D95 34%,#7A6A55 66%,#3A2E22 100%)}
+.ph .ph-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,23,34,.35),rgba(15,23,34,.05) 45%,rgba(15,23,34,.55))}
+.ph-top{display:flex;align-items:center;gap:6px}
+.ph-mood{flex:1;text-align:center;font-size:13px;color:#EEF2F7;white-space:nowrap}
+.ph-chip{display:inline-block;padding:2px 9px;border:1.5px solid #F2C14E;border-radius:999px;color:#F2C14E;font-weight:700;margin-left:2px}
+.ph-card{border-radius:22px;background:rgba(15,23,34,.42);border:1px solid rgba(255,255,255,.16);padding:14px;display:flex;flex-direction:column;gap:8px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.ph-clocks{display:flex;align-items:flex-start;justify-content:space-between}
+.ph-col{min-width:0}
+.ph-end{text-align:right}
+.ph-eye{font-size:9px;font-weight:700;letter-spacing:.14em;display:flex;align-items:center;gap:5px}
+.ph-end .ph-eye{justify-content:flex-end}
+.ph-lamp{width:8px;height:8px;border-radius:50%;background:#F2C14E;box-shadow:0 0 8px 2px rgba(242,193,78,.7)}
+.ph-time{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:30px;line-height:1.1;color:#EEF2F7}
+.ph-time small{font-size:14px}
+.ph-city{font-size:11px;color:#EEF2F7}
+.ph-sky{font-size:10px;line-height:1.35;color:#B8C6D8;margin-top:3px}
+.ph-slash{width:2px;height:58px;margin-top:10px;background:rgba(255,255,255,.3);transform:rotate(20deg)}
+.ph-lampline{font-size:10.5px;color:#B8C6D8;text-align:center}
+.ph-bar{height:10px;border-radius:6px;background:rgba(255,255,255,.14);overflow:hidden}
+.ph-bar div{width:64%;height:100%;background:repeating-linear-gradient(135deg,#F2C14E 0 4px,#A8802A 4px 8px)}
+.ph-caps{display:flex;justify-content:space-between;font-size:10px;color:#B8C6D8;margin-top:-2px}
+.ph-line{display:flex;align-items:center;justify-content:center;gap:7px;font-size:13px;font-weight:500;color:#EEF2F7;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.ph-space{flex:1}
+.ph-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.ph-tile{height:62px;box-sizing:border-box;border-radius:22px;background:rgba(15,23,34,.42);border:1px solid rgba(255,255,255,.16);padding:0 8px;display:flex;align-items:center;gap:7px;min-width:0;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.ph-hi{border-color:rgba(var(--c),.6)}
+.ph-ti{flex:none;width:30px;height:30px;border-radius:50%;background:rgba(var(--c),.18);display:flex;align-items:center;justify-content:center}
+.ph-ti svg{fill:none;stroke:rgb(var(--c));stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ph-tile div{min-width:0}
+.ph-tile b{display:block;font-size:12px;letter-spacing:-.01em;color:#EEF2F7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ph-tile small{display:block;font-size:9px;color:#B8C6D8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hero .lede{font-size:20px;max-width:560px}
+@media (max-width:600px){.hero{padding:0 16px 32px;gap:32px}.hero h1{font-size:38px}.hero .lede{font-size:18px}}
+footer{margin-top:72px;padding:32px 0 56px;border-top:1px solid rgba(255,255,255,.14);font-size:14px;color:#B8C6D8;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+footer a{color:#B8C6D8}
+@media (max-width:600px){.wrap{padding:0 16px}h1{font-size:36px}}
+.site-nav a{color:#B8C6D8;text-decoration:none}.site-nav a:hover{color:#F2C14E}.site-nav>a:first-child{color:#EEF2F7}.site-nav .nav-cta{color:#F2C14E}
+@media (max-width:720px){.site-nav{flex-wrap:nowrap!important;padding:20px 16px!important}.nav-link{display:none}.nav-cta{white-space:nowrap;padding:10px 14px!important;font-size:14px}.site-nav>a:first-child span{font-size:20px!important}.site-nav>a:first-child svg{width:28px;height:31px}}
+@media (max-width:350px){.site-nav>a:first-child{gap:8px!important}.site-nav>a:first-child span{font-size:18px!important}.nav-cta{padding:9px 11px!important;font-size:13px}}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#F2C14E;margin:40px 0 -24px}
+h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;margin:0 0 4px;color:#EEF2F7}
+.offer{margin:32px 0 8px;border-radius:24px;border:1px solid rgba(242,193,78,.45);background:rgba(242,193,78,.06);padding:26px;display:flex;flex-direction:column;gap:14px}
+.count{display:flex;align-items:baseline;gap:10px}
+.count b{font-family:'Bricolage Grotesque',sans-serif;font-size:44px;color:#F2C14E;line-height:1}
+.count span{font-size:14px;color:#B8C6D8;letter-spacing:.04em}
+.perks{margin:0;padding-left:20px}
+.small{font-size:13px;color:#B8C6D8;margin:0}
+.code{font-family:'Bricolage Grotesque',sans-serif;letter-spacing:.08em;color:#EEF2F7}
+.mock{color:#7FB2F0}
+.things{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:14px}
+.thing p{margin:0;font-size:15px}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0 6px}
+.tile{--c:242,193,78;border-radius:20px;background:rgba(15,23,34,.55);border:1px solid rgba(var(--c),.55);padding:16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.tile b{display:block;font-size:17px;line-height:1.3;color:#EEF2F7}
+.tile small{display:block;font-size:15px;line-height:1.5;color:#B8C6D8}
+.also{margin:6px 0 0;font-size:15px;color:#B8C6D8}
+@media (max-width:520px){.tiles{grid-template-columns:1fr}}
+.thing{border-radius:18px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.03);padding:16px}
+.waitlist{display:flex;flex-wrap:wrap;gap:10px;max-width:520px}
+.waitlist input{flex:1 1 220px;min-width:0;height:52px;border-radius:999px;border:1.5px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);color:#EEF2F7;padding:0 18px;font:16px 'DM Sans',sans-serif}
+.waitlist button{height:52px;padding:0 24px;border-radius:999px;border:none;background:#F2C14E;color:#0F1722;font:700 16px 'DM Sans',sans-serif;cursor:pointer}
+.waitlist-status{flex-basis:100%;margin:0;font-size:15px;color:#F2C14E;min-height:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+details{border-top:1px solid rgba(255,255,255,.14);padding:18px 0}
+details:last-of-type{border-bottom:1px solid rgba(255,255,255,.14)}
+summary{cursor:pointer;list-style:none;font-size:17px;font-weight:700;min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:16px;color:#EEF2F7}
+summary::-webkit-details-marker{display:none}
+summary span{color:#F2C14E;font-size:22px}
+details p{margin:8px 0 0}
+.signoff{margin-top:40px;font-size:17px;color:#EEF2F7}
+</style>
+</head>
+<body class="xmas">
+<div class="snow far" aria-hidden="true"></div><div class="snow" aria-hidden="true"></div>
+<div class="wrap">
+</div>
+<div class="site-nav" style="max-width:1180px;margin:0 auto;padding:28px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<a href="/" style="display:flex;align-items:center;gap:12px;color:#EEF2F7">
+<svg viewBox="0 0 400 440" width="34" height="37" role="img" aria-label="Resonance logo: Big Ben and the Empire State Building joined along a diagonal">
+<defs>
+<clipPath id="cl"><polygon points="0,0 184,0 212,440 0,440"/></clipPath>
+<clipPath id="cr"><polygon points="188,0 400,0 400,440 216,440"/></clipPath>
+<mask id="mb" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="440"><rect x="0" y="0" width="400" height="440" fill="#fff"/><rect x="94" y="250" width="5" height="34" fill="#000"/><rect x="94" y="300" width="5" height="34" fill="#000"/><rect x="94" y="350" width="5" height="34" fill="#000"/><rect x="111" y="250" width="5" height="34" fill="#000"/><rect x="111" y="300" width="5" height="34" fill="#000"/><rect x="111" y="350" width="5" height="34" fill="#000"/><circle cx="105" cy="189" r="27" fill="#000"/><path d="M88 140V118a5 5 0 0 1 10 0V140Z" fill="#000"/><path d="M112 140V118a5 5 0 0 1 10 0V140Z" fill="#000"/></mask>
+<mask id="me" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="440"><rect x="0" y="0" width="400" height="440" fill="#fff"/><rect x="246" y="350" width="2" height="54" fill="#000"/><rect x="260" y="350" width="2" height="54" fill="#000"/><rect x="274" y="350" width="2" height="54" fill="#000"/><rect x="288" y="350" width="2" height="54" fill="#000"/><rect x="302" y="350" width="2" height="54" fill="#000"/><rect x="316" y="350" width="2" height="54" fill="#000"/><rect x="330" y="350" width="2" height="54" fill="#000"/><rect x="344" y="350" width="2" height="54" fill="#000"/><rect x="260" y="288" width="2" height="48" fill="#000"/><rect x="272" y="288" width="2" height="48" fill="#000"/><rect x="284" y="288" width="2" height="48" fill="#000"/><rect x="296" y="288" width="2" height="48" fill="#000"/><rect x="308" y="288" width="2" height="48" fill="#000"/><rect x="320" y="288" width="2" height="48" fill="#000"/><rect x="330" y="288" width="2" height="48" fill="#000"/><rect x="272" y="208" width="2" height="66" fill="#000"/><rect x="284" y="208" width="2" height="66" fill="#000"/><rect x="296" y="208" width="2" height="66" fill="#000"/><rect x="308" y="208" width="2" height="66" fill="#000"/><rect x="318" y="208" width="2" height="66" fill="#000"/><rect x="282" y="160" width="2" height="38" fill="#000"/><rect x="292" y="160" width="2" height="38" fill="#000"/><rect x="302" y="160" width="2" height="38" fill="#000"/><rect x="310" y="160" width="2" height="38" fill="#000"/><rect x="289" y="130" width="2" height="20" fill="#000"/><rect x="295" y="130" width="2" height="20" fill="#000"/><rect x="301" y="130" width="2" height="20" fill="#000"/></mask>
+</defs>
+<g clip-path="url(#cl)"><g transform="translate(95 0)"><g mask="url(#mb)"><rect x="40" y="410" width="130" height="6" fill="#1F4F8F"/><rect x="72" y="398" width="66" height="12" fill="#2F6FBF"/><rect x="78" y="230" width="54" height="170" fill="#2F6FBF"/><rect x="114" y="230" width="18" height="170" fill="#1F4F8F"/><rect x="68" y="150" width="74" height="80" fill="#2F6FBF"/><rect x="124" y="150" width="18" height="80" fill="#1F4F8F"/><rect x="64" y="142" width="82" height="10" fill="#2F6FBF"/><rect x="64" y="226" width="82" height="8" fill="#2F6FBF"/><rect x="76" y="98" width="58" height="44" fill="#2F6FBF"/><rect x="70" y="90" width="70" height="10" fill="#2F6FBF"/><polygon points="70,90 73,60 76,90" fill="#2F6FBF"/><polygon points="134,90 137,60 140,90" fill="#2F6FBF"/><polygon points="78,90 132,90 105,34" fill="#2F6FBF"/><polygon points="105,34 132,90 105,90" fill="#1F4F8F"/><rect x="104" y="12" width="2" height="24" fill="#2F6FBF"/><circle cx="105" cy="12" r="3" fill="#2F6FBF"/></g><circle cx="105" cy="189" r="22" fill="none" stroke="#2F6FBF" stroke-width="1.5"/><line x1="105" y1="189" x2="105" y2="172" stroke="#2F6FBF" stroke-width="3" stroke-linecap="round"/><line x1="105" y1="189" x2="117" y2="195" stroke="#2F6FBF" stroke-width="3" stroke-linecap="round"/><rect x="104" y="164" width="2" height="4" fill="#2F6FBF"/><rect x="104" y="210" width="2" height="4" fill="#2F6FBF"/><rect x="80" y="188" width="4" height="2" fill="#2F6FBF"/><rect x="126" y="188" width="4" height="2" fill="#2F6FBF"/></g></g>
+<g clip-path="url(#cr)"><g transform="translate(-95 0)"><g mask="url(#me)"><rect x="190" y="410" width="130" height="6" fill="#B07C0C"/><rect x="236" y="340" width="118" height="70" fill="#E0A21B"/><rect x="330" y="340" width="24" height="70" fill="#B07C0C"/><rect x="250" y="280" width="90" height="62" fill="#E0A21B"/><rect x="318" y="280" width="22" height="62" fill="#B07C0C"/><rect x="262" y="200" width="66" height="82" fill="#E0A21B"/><rect x="308" y="200" width="20" height="82" fill="#B07C0C"/><rect x="274" y="152" width="42" height="50" fill="#E0A21B"/><rect x="298" y="152" width="18" height="50" fill="#B07C0C"/><rect x="283" y="124" width="24" height="30" fill="#E0A21B"/><rect x="297" y="124" width="10" height="30" fill="#B07C0C"/><path d="M283 124Q295 104 307 124Z" fill="#E0A21B"/><polygon points="291,110 299,110 297,66 293,66" fill="#E0A21B"/><rect x="294" y="20" width="2" height="48" fill="#E0A21B"/></g></g></g>
+</svg>
+<span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:24px">Resonance</span>
+</a>
+<div class="nav-links" style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-size:15px">
+<a class="nav-link" href="/#how" style="padding:12px 0">How it works</a>
+<a class="nav-link" href="/#features" style="padding:12px 0">Features</a>
+<a class="nav-link" href="/#privacy" style="padding:12px 0">Privacy</a>
+<a class="nav-link" href="/#faq" style="padding:12px 0">FAQ</a>
+<a class="nav-link" href="/founders/" style="padding:12px 0">Founders</a>
+<a class="nav-link" href="/plus/" style="padding:12px 0;color:#F2C14E">Resonance+</a>
+<a class="nav-link" href="https://sharedresonance.app" style="padding:12px 0">Open the app</a>
+<a class="nav-cta" href="#christmas-form" style="padding:12px 20px;border:1.5px solid #F2C14E;border-radius:999px;color:#F2C14E;font-weight:700">Remind me</a>
+</div>
+</div>
+<div class="hero">
+<div class="hero-text">
+<div class="eyebrow">December on Resonance</div>
+<h1>25 days, opened from two places.</h1>
+<p class="lede">An advent calendar for the two of you. Every day until Christmas there’s a little door: a question, a photo, a song. You each fill in your half, and the door opens when you’ve both done it.</p>
+<p class="hero-note">Starts the evening of 30 November. Free for every couple on Resonance.</p>
+<p class="hero-plus">With <a href="/plus/">Resonance+</a>, your Christmas Eve letter can be in your own voice, and every December’s card is kept.</p>
+</div>
+<div class="cal-wrap" aria-hidden="true">
+<div class="cal">
+<div class="lights"><i style="--l:#C2364F;--d:0s"></i><i style="--l:#F2C14E;--d:0.6s"></i><i style="--l:#2F7A5C;--d:1.2s"></i><i style="--l:#8FC1E8;--d:1.7999999999999998s"></i><i style="--l:#E8794A;--d:2.4s"></i><i style="--l:#C2364F;--d:0s"></i><i style="--l:#F2C14E;--d:0.6s"></i><i style="--l:#2F7A5C;--d:1.2s"></i><i style="--l:#8FC1E8;--d:1.7999999999999998s"></i><i style="--l:#E8794A;--d:2.4s"></i><i style="--l:#C2364F;--d:0s"></i><i style="--l:#F2C14E;--d:0.6s"></i><i style="--l:#2F7A5C;--d:1.2s"></i></div>
+<div class="cal-head"><span>DECEMBER</span><span>Door 7 is open</span></div>
+<div class="doors"><div class="door open"><span class="half" style="background:#C2364F"></span><span class="half" style="background:#2F7A5C"></span><em>1</em></div><div class="door open"><span class="half" style="background:#F2C14E"></span><span class="half" style="background:#8FC1E8"></span><em>2</em></div><div class="door open"><span class="half" style="background:#2F7A5C"></span><span class="half" style="background:#DCE8F2"></span><em>3</em></div><div class="door open"><span class="half" style="background:#E8794A"></span><span class="half" style="background:#C2364F"></span><em>4</em></div><div class="door open"><span class="half" style="background:#DCE8F2"></span><span class="half" style="background:#F2C14E"></span><em>5</em></div><div class="door open"><span class="half" style="background:#8FC1E8"></span><span class="half" style="background:#2F7A5C"></span><em>6</em></div><div class="door today"><span class="half" style="background:#F2C14E"></span><span class="half wait"></span><em>7</em></div><div class="door shut"><em>8</em></div><div class="door shut"><em>9</em></div><div class="door shut"><em>10</em></div><div class="door shut"><em>11</em></div><div class="door shut"><em>12</em></div><div class="door shut"><em>13</em></div><div class="door shut"><em>14</em></div><div class="door shut"><em>15</em></div><div class="door shut"><em>16</em></div><div class="door shut"><em>17</em></div><div class="door shut"><em>18</em></div><div class="door shut"><em>19</em></div><div class="door shut"><em>20</em></div><div class="door shut"><em>21</em></div><div class="door shut"><em>22</em></div><div class="door shut"><em>23</em></div><div class="door shut letters"><em>24</em><svg viewBox="0 0 24 24" width="16" height="16"><path d="M3 7h18v12H3zM3 7l9 7 9-7" fill="none" stroke="#F2C14E" stroke-width="1.6" stroke-linejoin="round"/></svg></div><div class="door shut last"><em>25</em><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z" fill="#F2C14E"/></svg></div></div>
+<div class="cal-key"><span><i class="k-both"></i>Both opened</span><span><i class="k-you"></i>Your half</span><span><i class="k-shut"></i>Not yet</span></div>
+</div>
+</div>
+</div>
+
+<div class="wrap">
+<h2>How a door opens</h2>
+<ol class="steps">
+<li><b>Fill your half the evening before.</b> From 5pm, tomorrow’s door is ready. Answer the question or take the photo. It takes a minute.</li>
+<li><b>Your partner wakes up to it.</b> When their day starts, your half is waiting for them, and they add theirs.</li>
+<li><b>The door opens.</b> Both halves sit side by side: your answer and theirs, your photo and theirs.</li>
+</ol>
+
+<h2>Behind the doors</h2>
+<div class="tiles">
+<div class="tile" style="--c:143,193,232"><b>Questions for December</b><small>“What did Christmas smell like when you were small?” Answer it, then see what they said.</small></div>
+<div class="tile" style="--c:47,122,92"><b>Photos from two cities</b><small>Something red. The view from your window. You, wearing green. You each find it where you are.</small></div>
+<div class="tile" style="--c:194,54,79"><b>The same moment</b><small>On door 13 your phones buzz at the same minute, and you both take a photo right then: breakfast for one of you, dinner for the other.</small></div>
+<div class="tile" style="--c:242,193,78"><b>Letters for Christmas Eve</b><small>Write yours behind door 10, or record it in your own voice with Resonance+. It stays sealed until door 24, and then you both open them.</small></div>
+</div>
+
+<div class="feature">
+<div class="envelope" aria-hidden="true"><div class="env-stamp"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z" fill="#F2C14E"/></svg></div><div class="env-post">LONDON<br>25 DEC<br>NEW YORK</div><b>Merry<br>Christmas</b><span>from Resonance</span></div>
+<div class="feature-text">
+<h2>On Christmas morning, a card arrives</h2>
+<p>Behind door 25 is an envelope. Open it and your card slides out: the photos of you both, your December in numbers, your two songs, the same moment from two cities, and how many days until you’re together again. It stays in the app to look back on, and with Resonance+ every year’s card is kept, so next Christmas can tell you how far you’ve come.</p>
+</div>
+</div>
+
+<h2>Wherever midnight is</h2>
+<p>Each door opens when the day starts where you are. If your partner is five hours ahead, their morning comes first, and your half is already there for them.</p>
+
+<h2>Call it what you like</h2>
+<p>Advent, a countdown to Christmas or just December. The doors are about the two of you, and nothing in them asks you to celebrate anything in particular.</p>
+
+<div class="offer">
+<div class="count"><b>30</b><span>November, the evening it starts</span></div>
+<p class="offer-line">Already on Resonance? It appears on your phone on the evening of 30 November, ready for door 1. New here? Join before then and start on day one.</p>
+<form class="waitlist" id="christmas-form">
+<label for="christmas-email" class="sr">Your email</label>
+<input id="christmas-email" type="email" required placeholder="you@example.com" autocomplete="email">
+<button type="submit">Remind me on 30 November</button>
+<p class="waitlist-status" role="status" aria-live="polite"></p>
+</form>
+</div>
+
+<h2>Questions</h2>
+<details><summary>Is it free?<span aria-hidden="true">+</span></summary><p>Yes. Every door, and the card, is free for every couple on Resonance. With Resonance+ you can also record your Christmas Eve letter in your own voice, and every December’s card is kept (free couples keep their latest one).</p></details>
+<details><summary>What if we miss a day?<span aria-hidden="true">+</span></summary><p>Doors stay open until 6 January, so you can catch up whenever you like.</p></details>
+<details><summary>Do we both need Resonance?<span aria-hidden="true">+</span></summary><p>Yes. It works on iPhone, Android and the web at sharedresonance.app, and one of you invites the other.</p></details>
+<details><summary>Can my partner see my half before I’ve seen theirs?<span aria-hidden="true">+</span></summary><p>They see it once their day for that door has started, so whoever fills in first leaves something waiting. Christmas Eve letters stay sealed for you both until door 24.</p></details>
+
+<p class="signoff">However far apart you are this December, open the doors together.</p>
+<footer>
+<span>© Global Tether Ventures Ltd</span>
+<span><a href="/">Home</a> &nbsp; <a href="/plus/">Resonance+</a> &nbsp; <a href="https://sharedresonance.app/privacy/">Privacy policy</a> &nbsp; <a href="mailto:contact@globaltetherventures.com">contact@globaltetherventures.com</a></span>
+</footer>
+</div>
+<script>
+(function () {
+  var URL = 'https://rcvrrgnmpxwwqqiuzdxd.supabase.co';
+  var KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJjdnJyZ25tcHh3d3FxaXV6ZHhkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE1ODIwNTgsImV4cCI6MjEwNzE1ODA1OH0.74lQlZ-lOhcX-yD_u5OGnSNEoqHQhKU0V39tyFLWdCc';
+  var form = document.getElementById('christmas-form');
+  if (!form) return;
+  var status = form.querySelector('.waitlist-status');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = form.querySelector('input').value.trim();
+    status.textContent = 'Saving your place…';
+    fetch(URL + '/rest/v1/rpc/join_waitlist', {
+      method: 'POST',
+      headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, source: 'home' })
+    }).then(function (r) {
+      status.textContent = r.ok ? 'Done. We’ll email you on 30 November.' : 'That didn’t work. Check your email address and try again.';
+      if (r.ok) form.querySelector('input').value = '';
+    }).catch(function () { status.textContent = 'Couldn’t reach the server. Try again in a moment.'; });
+  });
+})();
+</script>
+<script>
+// Dollars for visitors in the US, as on the rest of the site.
+(function () {
+  var tz = '';
+  try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+  var us = /^(America/(New_York|Chicago|Denver|Los_Angeles|Phoenix|Anchorage|Detroit|Boise|Juneau|Sitka|Nome|Yakutat|Adak|Metlakatla|Menominee|Puerto_Rico|Indiana/.+|Kentucky/.+|North_Dakota/.+)|Pacific/Honolulu|US/.+)$/.test(tz);
+  if (!us) return;
+  document.querySelectorAll('.money[data-usd]').forEach(function (el) { el.textContent = el.getAttribute('data-usd'); });
+})();
+</script>
+</body>
+</html>
